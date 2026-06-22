@@ -17,48 +17,52 @@ export const en: Messages = {
 		title: 'Your code agent history, in one place.',
 		description:
 			'Browse, search, and review your AI coding sessions. Multiple agents supported — data stays on your Mac.',
-		ctaGithub: 'View on GitHub',
+		ctaGithub: 'Download Koroda',
 		ctaFeatures: 'See Features',
-		previewTitle: 'Sessions',
-		previewSessions: [
-			{ title: 'Refactor auth middleware', meta: 'Codex · 2h ago' },
-			{ title: 'Add full-text search', meta: 'Claude · Yesterday' },
-			{ title: 'Fix sidebar scrolling', meta: 'Cursor · Mar 18' },
-		],
+		zoomImage: 'View full screenshot',
+		closeLightbox: 'Close preview',
 	},
 	features: {
 		kicker: 'Features',
 		heading: 'What Kodora supports today',
 		items: [
 			{
+				id: 'browse',
 				title: 'Multi-Agent Browsing',
 				description: 'Projects, sessions, and message details in one app.',
 			},
 			{
+				id: 'search',
 				title: 'Full-Text Search',
 				description: 'Search sessions and messages, jump to matching records.',
 			},
 			{
+				id: 'insights',
 				title: 'Insights',
 				description: 'Usage overview, activity wall, and chart summaries.',
 			},
 			{
+				id: 'archive',
 				title: 'Favorites & Archive',
 				description: 'Mark important sessions and hide the rest.',
 			},
 			{
+				id: 'notes',
 				title: 'Private Notes',
 				description: 'Add local notes to sessions — included in search results.',
 			},
 			{
+				id: 'export',
 				title: 'Export & Copy',
 				description: 'Copy or export session content as Markdown.',
 			},
 			{
+				id: 'security',
 				title: 'Sensitive Data Scan',
 				description: 'Scan sessions for potential risks with a security overview.',
 			},
 			{
+				id: 'local',
 				title: 'Local First',
 				description: 'Indexes and session data stay on your machine.',
 			},

@@ -1,3 +1,5 @@
+import type { FeatureId } from '../lib/features'
+
 export type Locale = 'zh' | 'en'
 
 export type Messages = {
@@ -17,13 +19,13 @@ export type Messages = {
 		description: string
 		ctaGithub: string
 		ctaFeatures: string
-		previewTitle: string
-		previewSessions: Array<{ title: string; meta: string }>
+		zoomImage: string
+		closeLightbox: string
 	}
 	features: {
 		kicker: string
 		heading: string
-		items: Array<{ title: string; description: string }>
+		items: Array<{ id: FeatureId; title: string; description: string }>
 	}
 	agents: {
 		kicker: string

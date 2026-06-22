@@ -9,7 +9,7 @@ export default function Footer() {
 			<div className="page flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
 				<p className="copy-14 m-0 text-secondary">&copy; {year} Kodora</p>
 				<a
-					href="https://github.com/go7hic/kodora"
+					href="https://github.com/Go7hic/kodora-web"
 					target="_blank"
 					rel="noreferrer"
 					className="btn btn-primary"

@@ -1,6 +1,8 @@
 import { createFileRoute } from '@tanstack/react-router'
+import FeatureIcon from '../components/FeatureIcon'
+import HeroImage from '../components/HeroImage'
 import { useLocale } from '../i18n/LocaleProvider'
-import { AGENTS } from '../lib/content'
+import { AGENTS, DOWNLOAD_URL } from '../lib/content'
 
 export const Route = createFileRoute('/')({
 	component: HomePage,
@@ -27,9 +29,7 @@ function HomePage() {
 						</p>
 						<div id="download" className="flex flex-wrap gap-3">
 							<a
-								href="https://github.com/go7hic/kodora"
-								target="_blank"
-								rel="noreferrer"
+								href={DOWNLOAD_URL}
 								className="btn btn-primary"
 							>
 								{m.hero.ctaGithub}
@@ -40,24 +40,7 @@ function HomePage() {
 						</div>
 					</div>
 
-					<div className="preview-panel">
-						<div className="preview-toolbar">
-							<span className="preview-dot" />
-							<span className="preview-dot" />
-							<span className="preview-dot" />
-							<span className="label-12 text-muted ml-2">{m.hero.previewTitle}</span>
-						</div>
-						<div className="preview-body">
-							{m.hero.previewSessions.map((session) => (
-								<div key={session.title} className="preview-row">
-									<div>
-										<div className="label-14">{session.title}</div>
-										<div className="copy-13 text-muted mt-1">{session.meta}</div>
-									</div>
-								</div>
-							))}
-						</div>
-					</div>
+					<HeroImage />
 				</div>
 			</section>
 
@@ -69,8 +52,11 @@ function HomePage() {
 					<h2 className="heading-32 m-0 mb-10">{m.features.heading}</h2>
 					<div className="feature-grid">
 						{m.features.items.map((feature) => (
-							<article key={feature.title} className="card p-6">
-								<h3 className="heading-20 m-0 mb-2">{feature.title}</h3>
+							<article key={feature.id} className="card feature-card p-6">
+								<div className="feature-card-head">
+									<FeatureIcon id={feature.id} />
+									<h3 className="heading-20 m-0">{feature.title}</h3>
+								</div>
 								<p className="copy-14 m-0 text-secondary">{feature.description}</p>
 							</article>
 						))}
