@@ -10,6 +10,7 @@ export const en: Messages = {
 		features: 'Features',
 		agents: 'Agents',
 		privacy: 'Privacy',
+		changelog: 'Changelog',
 		github: 'GitHub',
 	},
 	hero: {
@@ -81,6 +82,39 @@ export const en: Messages = {
 	},
 	footer: {
 		ctaGithub: 'View on GitHub',
+	},
+	changelog: {
+		kicker: 'Changelog',
+		heading: 'Release history',
+		download: 'Download this version',
+		backHome: '← Back to home',
+		entries: [
+			{
+				version: '0.0.2',
+				date: '2026-06-23',
+				title: 'Performance and data layer improvements',
+				items: [
+					'Migrate core data paths to UniFFI',
+					'Improve indexed refresh performance',
+					'Fix tool call total counts',
+				],
+			},
+			{
+				version: '0.0.1',
+				date: '2025-06-22',
+				title: 'Initial public release',
+				items: [
+					'First macOS release',
+					'Browse sessions from Codex, Claude Code, Cursor, OpenCode, Factory, and Pi',
+					'Full-text search across sessions and messages',
+					'Insights with usage overview and activity wall',
+					'Favorites, archive, and local private notes',
+					'Copy and export session content as Markdown',
+					'Sensitive data scan with security overview',
+					'Local-first: indexes and session data stay on your Mac',
+				],
+			},
+		],
 	},
 	theme: {
 		auto: 'Auto',

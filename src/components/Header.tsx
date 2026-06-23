@@ -8,9 +8,9 @@ export default function Header() {
 	const { m } = useLocale()
 
 	const navItems = [
-		{ href: '#features', label: m.nav.features },
-		{ href: '#agents', label: m.nav.agents },
-		{ href: '#privacy', label: m.nav.privacy },
+		{ href: '/#features', label: m.nav.features },
+		{ href: '/#agents', label: m.nav.agents },
+		{ href: '/#privacy', label: m.nav.privacy },
 	] as const
 
 	return (
@@ -32,6 +32,13 @@ export default function Header() {
 							{item.label}
 						</a>
 					))}
+					<Link
+						to="/changelog"
+						className="nav-link"
+						activeProps={{ className: 'nav-link is-active' }}
+					>
+						{m.nav.changelog}
+					</Link>
 				</div>
 
 				<div className="ml-auto flex items-center gap-2">

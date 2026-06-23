@@ -9,6 +9,7 @@ export const zh: Messages = {
 		features: '功能',
 		agents: 'Agent',
 		privacy: '隐私',
+		changelog: '更新日志',
 		github: 'GitHub',
 	},
 	hero: {
@@ -46,6 +47,39 @@ export const zh: Messages = {
 	},
 	footer: {
 		ctaGithub: '查看 GitHub',
+	},
+	changelog: {
+		kicker: '更新日志',
+		heading: '版本历史',
+		download: '下载此版本',
+		backHome: '← 返回首页',
+		entries: [
+			{
+				version: '0.0.2',
+				date: '2026-06-23',
+				title: '性能与数据层改进',
+				items: [
+					'核心数据路径迁移至 UniFFI',
+					'提升索引刷新性能',
+					'修复 tool call 统计总数问题',
+				],
+			},
+			{
+				version: '0.0.1',
+				date: '2025-06-22',
+				title: '首个公开版本',
+				items: [
+					'macOS 客户端首次发布',
+					'支持浏览 Codex、Claude Code、Cursor、OpenCode、Factory、Pi 等 Agent 的会话记录',
+					'全文搜索会话与消息，快速定位记录',
+					'Insights 用量统计与活跃墙',
+					'收藏、归档与本地私有备注',
+					'会话内容支持 Markdown 复制与导出',
+					'敏感信息扫描与安全概览',
+					'本地优先：索引与会话数据留在本机',
+				],
+			},
+		],
 	},
 	theme: {
 		auto: '自动',

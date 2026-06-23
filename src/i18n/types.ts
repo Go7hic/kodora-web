@@ -11,6 +11,7 @@ export type Messages = {
 		features: string
 		agents: string
 		privacy: string
+		changelog: string
 		github: string
 	}
 	hero: {
@@ -39,6 +40,18 @@ export type Messages = {
 	}
 	footer: {
 		ctaGithub: string
+	}
+	changelog: {
+		kicker: string
+		heading: string
+		download: string
+		backHome: string
+		entries: Array<{
+			version: string
+			date: string
+			title: string
+			items: string[]
+		}>
 	}
 	theme: {
 		auto: string

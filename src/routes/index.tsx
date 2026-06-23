@@ -1,4 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
+import DownloadIcon from '../components/DownloadIcon'
 import FeatureIcon from '../components/FeatureIcon'
 import HeroImage from '../components/HeroImage'
 import { useLocale } from '../i18n/LocaleProvider'
@@ -32,6 +33,7 @@ function HomePage() {
 								href={DOWNLOAD_URL}
 								className="btn btn-primary"
 							>
+								<DownloadIcon />
 								{m.hero.ctaGithub}
 							</a>
 							<a href="#features" className="btn btn-secondary">
