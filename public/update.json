@@ -1,5 +1,5 @@
 {
   "version": "0.0.2",
-  "url": "https://kodora-assets.deepzero.ai/kodora_0.0.2.dmg",
+  "url": "https://kodora-assets.deepzero.ai/Kodora_0.0.2.dmg",
   "notes": "Migrates core data paths to UniFFI, improves indexed refresh performance, fixes tool call totals, and keeps the legacy helper as a fallback."
 }
