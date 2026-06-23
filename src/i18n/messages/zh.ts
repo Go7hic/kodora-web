@@ -57,11 +57,10 @@ export const zh: Messages = {
 			{
 				version: '0.0.2',
 				date: '2026-06-23',
-				title: '性能与数据层改进',
+				title: '性能优化与问题修复',
 				items: [
-					'核心数据路径迁移至 UniFFI',
-					'提升索引刷新性能',
-					'修复 tool call 统计总数问题',
+					'提升索引刷新速度',
+					'修复统计相关问题',
 				],
 			},
 			{

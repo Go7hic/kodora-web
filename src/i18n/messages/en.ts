@@ -92,11 +92,10 @@ export const en: Messages = {
 			{
 				version: '0.0.2',
 				date: '2026-06-23',
-				title: 'Performance and data layer improvements',
+				title: 'Performance and bug fixes',
 				items: [
-					'Migrate core data paths to UniFFI',
-					'Improve indexed refresh performance',
-					'Fix tool call total counts',
+					'Improved index refresh speed',
+					'Fixed statistics display issues',
 				],
 			},
 			{
