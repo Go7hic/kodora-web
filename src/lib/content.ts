@@ -7,7 +7,7 @@ export type Agent = {
 export const LATEST_VERSION = '0.0.2'
 
 export const DOWNLOAD_URL =
-	'https://kodora-assets.deepzero.ai/kodora_0.0.2.dmg'
+	'https://kodora-assets.deepzero.ai/Kodora_0.0.2.dmg'
 
 export const AGENTS: Agent[] = [
 	{ id: 'codex', name: 'Codex', logo: '/codex.svg' },

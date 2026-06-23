@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://kodora-assets.deepzero.ai/Kodora_0.0.1.dmg">Download for macOS</a>
+  <a href="https://kodora-assets.deepzero.ai/Kodora_0.0.2.dmg">Download for macOS</a>
 </p>
 
 ---
@@ -48,6 +48,7 @@ Kodora only reads agent history from your Mac. Session content is never uploaded
 
 | Version | Link |
 |---------|------|
+| 0.0.2 | [Kodora_0.0.2.dmg](https://kodora-assets.deepzero.ai/Kodora_0.0.2.dmg) |
 | 0.0.1 | [Kodora_0.0.1.dmg](https://kodora-assets.deepzero.ai/Kodora_0.0.1.dmg) |
 
 ## License
