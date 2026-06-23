@@ -9,6 +9,8 @@ const THEME_INIT_SCRIPT = `(function(){try{var stored=window.localStorage.getIte
 
 const LOCALE_INIT_SCRIPT = `(function(){try{var stored=window.localStorage.getItem('${LOCALE_STORAGE_KEY}');var locale=(stored==='zh'||stored==='en')?stored:(navigator.language.toLowerCase().startsWith('zh')?'zh':'en');document.documentElement.lang=locale==='zh'?'zh-CN':'en';}catch(e){}})();`
 
+const FLAREBOARD_WEBSITE_ID = '12fe043e-69c8-4423-b2c1-d84a9e6b9f8a'
+
 export const Route = createRootRoute({
 	head: () => {
 		const m = messages.zh
@@ -37,6 +39,11 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 				<script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
 				<script dangerouslySetInnerHTML={{ __html: LOCALE_INIT_SCRIPT }} />
 				<HeadContent />
+				<script
+					defer
+					src="https://t.flareboard.dev/script.js"
+					data-website-id={FLAREBOARD_WEBSITE_ID}
+				/>
 			</head>
 			<body>
 				<LocaleProvider>
